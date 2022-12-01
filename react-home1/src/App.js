@@ -1,6 +1,7 @@
 import { useState } from "react"
 import { Form } from "./components/classes/Form"
 import { Form as FormFunc } from "./components/func/Form"
+import { Message } from "./components/func/Message"
 
 export function App() {
     const [toggle,setToggle] = useState(true)
@@ -16,6 +17,8 @@ export function App() {
                 <li>{el.name}</li>
             ))}
         </ul>
+        <hr/>
+        <Message titleOther='Message From Home'/>
         
         
             </>
